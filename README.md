@@ -1,29 +1,22 @@
-# [项目名称] - 图像分类
-
-![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
-![Framework](https://img.shields.io/badge/PyTorch-1.10%2B-orange)  <!-- 可选：替换为 TensorFlow/Keras -->
-![License](https://img.shields.io/badge/License-MIT-green)
-
-简短的项目描述（1-2句话）。例如：  
-> 基于PyTorch/TensorFlow的深度学习图像分类项目，实现[模型名称]模型在[数据集名称]上的训练与评估。
+# [第一届“慧炼丹心杯”AI挑战赛] - 蝴蝶图像的多分类任务
+  
+> 这是上海科技大学首届“慧炼丹心杯”AI挑战赛中，拔得头筹的 弼马温认证脸蛋团队 提出的方案的PyTorch版本。本次比赛的主题是利用机器学习技术完成蝴蝶图像的多分类任务。
+> 原版请参考https://github.com/SantinorDeng/AI-Competition-in-SHTU
 
 ## ✨ 功能特性
-- 支持多种主流模型（ResNet, VGG, EfficientNet等）
-- 数据增强与预处理流水线
-- 训练过程可视化（TensorBoard支持）
-- 模型评估指标计算（准确率、混淆矩阵等）
-- 单张图片/批量预测接口
+- 支持多种主流模型（EfficientNet, DenseNet等）的ensemble
+- 包括旋转、剪切、缩放、平移和随机擦除等多种数据增强手段
+- 模型评估指标计算、
 
 ## 📦 环境安装
 ```bash
 # 克隆项目
 git clone https://github.com/your_username/project_name.git
-cd project_name
 
-# 创建虚拟环境（可选）
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate    # Windows
+# 创建虚拟环境
+conda create -n AI-Competition-in-SHTU-PyTorch python=3.8
+conda activate AI-Competition-in-SHTU-PyTorch    # Windows
 
 # 安装依赖
+cd AI-Competition-in-SHTU-PyTorch
 pip install -r requirements.txt
